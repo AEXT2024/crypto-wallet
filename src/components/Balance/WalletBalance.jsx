@@ -7,7 +7,7 @@ const contractAddress = '0xA5Cc76EdabD9511a46708490Ef432E64746B89C9';
 const web3 = new Web3(window.ethereum);
 const myContract = new web3.eth.Contract(contractABI.abi, contractAddress);
 
-export const WalletBalance = () => {
+const WalletBalance = () => {
   async function checkBalance() {
     const balance = await myContract.methods.Check_Balance().call();
     console.log(`Balance: ${balance}`);
@@ -20,3 +20,4 @@ export const WalletBalance = () => {
     </div>
   );
 };
+export default WalletBalance;
