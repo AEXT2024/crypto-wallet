@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
 import './index.css';
-import Web3 from 'web3';
+// import Web3 from 'web3';
 
 if (window.ethereum) {
   console.log('Ethereum provider detected');
-  const web3 = new Web3(window.ethereum);
+  // const web3 = new Web3(window.ethereum);
   window.ethereum
     .request({ method: 'eth_requestAccounts' })
     .then(() => {
