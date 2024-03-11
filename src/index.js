@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './components/App';
 import './index.css';
-// import Web3 from 'web3';
 
 if (window.ethereum) {
   console.log('Ethereum provider detected');

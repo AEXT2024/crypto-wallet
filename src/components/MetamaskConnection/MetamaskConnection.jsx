@@ -38,19 +38,21 @@ const MetamaskConnection = () => {
   };
 
   return (
-    <div className="metamask_connection" style={{ marginBottom: '200px' }}>
-      {userAccount && balance? (
+    <div className="hero-content text-center">
+      {userAccount && balance ? (
         <div className="user_info">
           <span></span>Your account: {userAccount}
           <span>Your balance: {balance} ETH</span>
         </div>
       ) : (
-        <>
-          <h2>Connect your wallet to Metamask</h2>
-          <button type="button" onClick={onConnect}>
+        <div className="max-w-md">
+          <h2 className="text-5xl font-bold py-6">
+            Connect your wallet to Metamask
+          </h2>
+          <button type="button" onClick={onConnect} className="btn btn-primary">
             Connect your wallet
           </button>
-        </>
+        </div>
       )}
     </div>
   );
