@@ -14,6 +14,8 @@ const MetamaskConnection = () => {
           setUserAccount(account[0]);
           getBalance(account[0]);
         });
+      window.ethereum.on('accountChanged', onConnect);
+      window.ethereum.on('chainChanged', chainChangedHandler);
     } else {
       alert('Please install Metamask');
     }
@@ -30,9 +32,14 @@ const MetamaskConnection = () => {
         setBalance(balanceInEther);
       });
   };
+
+  const chainChangedHandler = () => {
+    window.location.reload();
+  };
+
   return (
     <div className="metamask_connection" style={{ marginBottom: '200px' }}>
-      {userAccount ? (
+      {userAccount && balance? (
         <div className="user_info">
           <span></span>Your account: {userAccount}
           <span>Your balance: {balance} ETH</span>

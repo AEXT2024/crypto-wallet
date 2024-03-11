@@ -5,8 +5,8 @@ import contractABI from '../../contracts/wallet.json';
 const contractAddress = '0xA5Cc76EdabD9511a46708490Ef432E64746B89C9';
 
 const web3 = new Web3(window.ethereum);
-console.log(contractABI, 'contarctABI');
-console.log(contractABI.abi, 'contarctABI-abi');
+// console.log(contractABI, 'contarctABI');
+// console.log(contractABI.abi, 'contarctABI-abi');
 
 const myContract = new web3.eth.Contract(contractABI.abi, contractAddress);
 
