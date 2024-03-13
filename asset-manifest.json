@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/crypto-wallet/static/css/main.e341e029.css",
+    "main.js": "/crypto-wallet/static/js/main.1b8365ef.js",
+    "static/media/metamaskfox.png": "/crypto-wallet/static/media/metamaskfox.b52147f5d62d57855c5e.png",
+    "index.html": "/crypto-wallet/index.html",
+    "main.e341e029.css.map": "/crypto-wallet/static/css/main.e341e029.css.map",
+    "main.1b8365ef.js.map": "/crypto-wallet/static/js/main.1b8365ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e341e029.css",
+    "static/js/main.1b8365ef.js"
+  ]
+}
