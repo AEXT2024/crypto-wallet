@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../../images/logo-aext-min.png';
 
 const NavBar = () => {
   const [theme, setTheme] = useState(
@@ -22,8 +23,13 @@ const NavBar = () => {
   return (
     <div className="navbar bg-primary text-primary-content px-4">
       <div className="flex-1">
-        <button className="btn btn-ghost text-xl">My Crypto Wallet
-        <img alt='' src='../../../assets/images/logo-aext.png' width='40' height='40'/></button>
+        <span className="text-2xl text-[#eff6ff] transition duration-300 ease-in-out">
+          My
+        </span>
+        <img alt='Company logo' src={logo} width='100' height='80'/>
+        <span className="text-2xl text-[#eff6ff] transition duration-300 ease-in-out">
+          Crypto Wallet
+        </span>
       </div>
       <div className="flex-none">
         <label className="swap swap-rotate">

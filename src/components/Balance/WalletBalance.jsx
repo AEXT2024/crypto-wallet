@@ -16,11 +16,11 @@ const WalletBalance = () => {
     console.log(`Balance: ${balance}`);
   }
   return (
-    <div>
+    <section>
       <h2>Wallet Balance</h2>
       <button onClick={checkBalance}>Check Balance</button>
       <p id="balance">Balance: 0 ETH</p>
-    </div>
+    </section>
   );
 };
 export default WalletBalance;

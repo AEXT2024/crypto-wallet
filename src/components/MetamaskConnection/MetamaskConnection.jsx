@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ethers } from 'ethers';
-import './MetamaskConection.css';
 import Swal from 'sweetalert2';
+import metamask from '../../images/metamaskfox.png';
 
 const MetamaskConnection = () => {
   const [userAccount, setUserAccount] = useState(null);
@@ -71,22 +71,22 @@ const MetamaskConnection = () => {
   };
 
   return (
-    <div className="hero-content text-center">
+    <div className=" text-center">
       {userAccount && balance ? (
-        <div className="user_info text-lg mt-4">
-          <span className="account-info text-blue-500"></span>Your account:{' '}
-          {userAccount}
-          <span className="balance-info text-green-500">
-            Your balance: {balance} ETH
+        <div className="text-lg mt-4">
+          <span className=" text-blue-500">
+            Your account:
+            {userAccount}
           </span>
+          <span className=" text-green-500">Your balance: {balance} ETH</span>
         </div>
       ) : (
-        <div className="max-w-md">
-          <h2 className="text-3xl font-bold py-6">
-            Connect your wallet to Metamask
+        <div className="">
+          <h2 className="text-3xl  py-6">
+            Please connect your wallet to Metamask
           </h2>
           <button type="button" onClick={onConnect} className="btn btn-primary">
-            Connect your wallet
+            Connect to <img alt="" src={metamask} width="50" height="50" />
           </button>
         </div>
       )}

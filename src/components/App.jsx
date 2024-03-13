@@ -7,13 +7,18 @@ import Hero from './Hero/Hero';
 
 export const App = () => {
   return (
-    <div className=''>
-      <NavBar />
-      <Hero />
-      <WalletBalance />
-      <WithdrawEther />
-      <TransferERC1155 />
-      <TransferERC20 />
-    </div>
+    <>
+      <header className="w-full">
+        <NavBar />
+      </header>
+      <main className="w-full shadow-lg rounded-lg p-4 mt-4">
+        <Hero />
+        <WalletBalance />
+        <WithdrawEther />
+        <TransferERC1155 />
+        <TransferERC20 />
+      </main>
+      <footer></footer>
+    </>
   );
 };
