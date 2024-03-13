@@ -81,13 +81,19 @@ const MetamaskConnection = () => {
           <span className=" text-green-500">Your balance: {balance} ETH</span>
         </div>
       ) : (
-        <div className="">
-          <h2 className="text-3xl  py-6">
+        <div className="flex align-center">
+          <p className="text-2xl mr-5">
             Please connect your wallet to Metamask
-          </h2>
-          <button type="button" onClick={onConnect} className="btn btn-primary">
-            Connect to <img alt="" src={metamask} width="50" height="50" />
-          </button>
+          </p>
+          <div className="inline-flex items-center space-x-2">
+            <button
+              type="button"
+              onClick={onConnect}
+              className="btn btn-primary inline-flex items-center"
+            >
+              Connect to <img alt="" src={metamask} width="50" height="50" />
+            </button>
+          </div>
         </div>
       )}
     </div>

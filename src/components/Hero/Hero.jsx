@@ -3,7 +3,7 @@ import MetamaskConnection from '../MetamaskConnection/MetamaskConnection';
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero py-5">
       <MetamaskConnection />
     </section>
   );

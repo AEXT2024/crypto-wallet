@@ -16,9 +16,13 @@ const WalletBalance = () => {
     console.log(`Balance: ${balance}`);
   }
   return (
-    <section>
-      <h2>Wallet Balance</h2>
-      <button onClick={checkBalance}>Check Balance</button>
+    <section className="py-10 text-center">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        Wallet Balance
+      </h2>
+      <button type="button" onClick={checkBalance} className="btn btn-primary">
+        Check Balance
+      </button>
       <p id="balance">Balance: 0 ETH</p>
     </section>
   );
