@@ -24,12 +24,12 @@ const NavBar = () => {
     <div className="navbar bg-primary text-primary-content px-4">
       <div className="flex-1">
         <span className="text-2xl text-[#eff6ff] transition duration-300 ease-in-out">
-          My
+          My Ethereum Wallet
         </span>
-        <img alt='Company logo' src={logo} width='100' height='80'/>
+        {/* <img alt="Company logo" src={logo} width="100" height="80" />
         <span className="text-2xl text-[#eff6ff] transition duration-300 ease-in-out">
-          Crypto Wallet
-        </span>
+          Ethereum Wallet
+        </span> */}
       </div>
       <div className="flex-none">
         <label className="swap swap-rotate">
