@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../images/logo-aext-min.png';
+// import logo from '../../images/logo-aext-min.png';
 
 const NavBar = () => {
   const [theme, setTheme] = useState(
